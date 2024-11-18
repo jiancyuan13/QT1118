@@ -1,4 +1,4 @@
-#ifndef TCPFILESENDER_H
+﻿#ifndef TCPFILESENDER_H
 #define TCPFILESENDER_H
 
 #include <QDialog>
@@ -18,6 +18,10 @@ public slots:
     void updateClientProgress(qint64 numBytes);
     void openFile();
 private:
+    QLabel           *ipLabel;
+    QLineEdit        *ipLineEdit;
+    QLabel           *portLabel;
+    QLineEdit        *portLineEdit;
     QProgressBar     *clientProgressBar;
     QLabel           *clientStatusLabel;
     QPushButton      *startButton;
